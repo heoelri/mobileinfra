@@ -7,7 +7,6 @@ Die mobile Infrastruktur basiert auf einem Raspberry Pi, der als zentraler Knote
 ```mermaid
 flowchart LR
     Drone[Drohne] --> Fernbedienung[Fernbedienung]
-    Drone --> Tablets[Tablets]
     Tablets -- WLAN --> Raspi[Raspberry Pi<br/>Access Point + Streaming]
     Fernbedienung -- WLAN --> Raspi
     Raspi -- HDMI --> TV[Monitor/TV]
@@ -35,8 +34,8 @@ Der Raspberry Pi fungiert als Herzstück der mobilen Infrastruktur und bietet:
 
 #### Drohne
 - Sendet Live-Video-Stream an den Raspberry Pi
-- Kommuniziert mit Fernbedienung und Tablets
-- Stream wird über RTSP/WebRTC bereitgestellt
+- Kommuniziert mit Fernbedienung
+- Stream wird über RTMP/RTSP/WebRTC bereitgestellt
 
 #### Tablets & Mobile Geräte
 - Verbinden sich via WLAN mit dem Raspberry Pi
@@ -111,7 +110,6 @@ Der Raspberry Pi fungiert als Herzstück der mobilen Infrastruktur und bietet:
 - [Konfiguration & Setup](config.md) - Detaillierte Installationsanleitung
 - [Streaming-Konfiguration](streaming.md) - MediaMTX Container-Setup
 - [Hardware-Anforderungen](hardware.md) - Einkaufsliste und Spezifikationen
-- [Erweiterungsmöglichkeiten](extensions.md) - USV/Akkus, KI, Mesh-Netzwerk, externe Antennen
 
 ## 🔧 Mögliche Erweiterungen
 
@@ -132,7 +130,6 @@ Das System kann je nach Einsatzbedarf erweitert werden:
 ### Mesh-Netzwerk
 - **B.A.T.M.A.N. Advanced**: Linux-natives Mesh-Protokoll
 - **802.11s**: Standard WLAN-Mesh
-- **Ubiquiti UniFi Mesh**: Kommerzielle Plug-and-Play-Lösung
 - **Anwendung**: Großflächige Einsätze mit mehreren Fahrzeugen
 
 ### KI-Integration
@@ -149,5 +146,3 @@ Das System kann je nach Einsatzbedarf erweitert werden:
 - **Umwelt-Sensoren**: Temperatur, Luftqualität, Feinstaub
 - **GPS-Integration**: Positionsbestimmung und Tracking
 - **Cloud-Synchronisation**: Automatisches Backup via rclone
-
-Detaillierte Informationen zu allen Erweiterungen finden Sie in der [Erweiterungs-Dokumentation](extensions.md).

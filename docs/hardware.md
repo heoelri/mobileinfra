@@ -115,7 +115,7 @@ Diese Seite listet alle benötigten Hardware-Komponenten für den Aufbau der mob
 ### Tablets & Smartphones
 
 **Für Stream-Empfang:**
-- Android 8.0+ oder iOS 12+
+- Android oder iOS
 - WLAN 802.11ac (5 GHz) empfohlen
 - WebRTC-fähiger Browser oder dedizierte App
 
@@ -192,7 +192,7 @@ Diese Seite listet alle benötigten Hardware-Komponenten für den Aufbau der mob
 ## Wartung & Ersatzteile
 
 **Empfohlene Ersatzteile:**
-- Spare microSD-Karte mit vorinstalliertem Image
+- microSD-Karte mit vorinstalliertem Image
 - USB-C Ersatzkabel
 - Ersatz-Netzteil/Powerbank
 - Backup Raspberry Pi für kritische Einsätze

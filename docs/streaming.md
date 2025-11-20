@@ -52,7 +52,7 @@ source ~/.bashrc
 **Container starten:**
 
 ```bash
-podman run -d \
+podman run -d --restart unless-stopped \
 -e MTX_RTSPTRANSPORTS=tcp \
 -e MTX_WEBRTCADDITIONALHOSTS=192.168.66.1 \
 -p 8554:8554 \
@@ -61,5 +61,5 @@ podman run -d \
 -p 8889:8889 \
 -p 8890:8890/udp \
 -p 8189:8189/udp \
-hub.docker.com/bluenviron/mediamtx:1
+docker.io/bluenviron/mediamtx:1
 ```
