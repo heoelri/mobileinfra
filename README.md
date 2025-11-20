@@ -24,7 +24,6 @@ Diese Lösung ermöglicht es Feuerwehren, vor Ort eine mobile WLAN-Infrastruktur
 ```mermaid
 flowchart LR
     Drone[Drohne] --> Fernbedienung[Fernbedienung]
-    Drone --> Tablets[Tablets]
     Tablets -- WLAN --> Raspi[Raspberry Pi<br/>Access Point + Streaming]
     Fernbedienung -- WLAN --> Raspi
     Raspi -- HDMI --> TV[Monitor/TV]
